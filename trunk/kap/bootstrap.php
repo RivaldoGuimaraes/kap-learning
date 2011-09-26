@@ -14,6 +14,7 @@
         Oraculum::Load('Models');
         Oraculum::Load('Exceptions');
         Oraculum::Load('HTTP');
+        Oraculum::Load('Plugins');
         Oraculum_Alias::LoadAlias('Request');
         Oraculum_Alias::LoadAlias('Logs');
         Oraculum_Request::defineTmpDir('./tmp');
