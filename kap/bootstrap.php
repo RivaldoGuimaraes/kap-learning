@@ -5,6 +5,7 @@
         define('DS', DIRECTORY_SEPARATOR);
 	define('PATH', getcwd().DS.'..'.DS.'libraries'.DS.'OF'.DS);
 	//ini_set('include_path', PATH.'::'.dirname(__FILE__));
+        define('SESS', 'kap-session');
 	ini_set('include_path', PATH);
 	include('Oraculum.php');
         Oraculum::Load('Register');
@@ -17,4 +18,4 @@
         Oraculum::Load('Plugins');
         Oraculum_Alias::LoadAlias('Request');
         Oraculum_Alias::LoadAlias('Logs');
-        Oraculum_Request::defineTmpDir('./tmp');
+        Oraculum_Request::defineTmpDir('../tmp');

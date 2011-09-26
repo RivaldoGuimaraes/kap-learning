@@ -1,7 +1,11 @@
 <?php
 	Oraculum_Register::set('titulo', 'Home');
 	Oraculum_Views::LoadElement('header');
+        $error=Oraculum_Register::get('error');
  ?>
+<?php if(isset($error)): ?>
+    <?php alert($error); ?>
+<?php endif; ?>
 <form method="post" action="<?php echo URL; ?>">
     <fieldset>
         <legend>Login</legend>
